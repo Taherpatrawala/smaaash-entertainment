@@ -8,6 +8,7 @@ import contactFormRoutes from "./routes/contactFormRoutes.js";
 import centersRoutes from "./routes/centersRoutes.js";
 import eventsRoutes from "./routes/eventsRoutes.js";
 import centerDetailsRoutes from "./routes/centerDetails.js";
+import centerEventsRoutes from "./routes/centerEventsRoutes.js";
 
 import { serve, setup } from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
@@ -54,6 +55,7 @@ app.use("/contactForm", contactFormRoutes);
 app.use("/centers", centersRoutes);
 app.use("/events", eventsRoutes);
 app.use("/centerDetails", centerDetailsRoutes);
+app.use("/centerEvents", centerEventsRoutes);
 
 ALL_MODELS_RELATIONSHIPS();
 adminJSConfig(app);

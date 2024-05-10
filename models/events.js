@@ -6,11 +6,6 @@ const Events = sequelize.define("Events", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  id: {
-    type: DataTypes.INTEGER,
-    primaryKey: true,
-    autoIncrement: true,
-  },
 });
 
 export default Events;
